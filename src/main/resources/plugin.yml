@@ -1,0 +1,16 @@
+name: CustomPaintings
+version: ${version}
+main: dev.custompaintings.CustomPaintingsPlugin
+api-version: '1.21'
+authors: [bitz]
+description: Upload PNG images to server and use them in-game as custom paintings.
+commands:
+  painting:
+    description: Manage custom paintings
+    usage: /painting <import|give|list|remove|reload>
+    permission: custompaintings.use
+permissions:
+  custompaintings.use:
+    default: true
+  custompaintings.admin:
+    default: op
